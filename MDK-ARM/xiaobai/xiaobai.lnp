@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"xiaobai\startup_stm32f103xe.o"
+"xiaobai\main.o"
+"xiaobai\gpio.o"
+"xiaobai\tim.o"
+"xiaobai\usart.o"
+"xiaobai\stm32f1xx_it.o"
+"xiaobai\stm32f1xx_hal_msp.o"
+"xiaobai\pid.o"
+"xiaobai\stm32f1xx_hal_gpio_ex.o"
+"xiaobai\stm32f1xx_hal_tim.o"
+"xiaobai\stm32f1xx_hal_tim_ex.o"
+"xiaobai\stm32f1xx_hal_uart.o"
+"xiaobai\stm32f1xx_hal.o"
+"xiaobai\stm32f1xx_hal_rcc.o"
+"xiaobai\stm32f1xx_hal_rcc_ex.o"
+"xiaobai\stm32f1xx_hal_gpio.o"
+"xiaobai\stm32f1xx_hal_dma.o"
+"xiaobai\stm32f1xx_hal_cortex.o"
+"xiaobai\stm32f1xx_hal_pwr.o"
+"xiaobai\stm32f1xx_hal_flash.o"
+"xiaobai\stm32f1xx_hal_flash_ex.o"
+"xiaobai\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "xiaobai\xiaobai.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "xiaobai.map" -o xiaobai\xiaobai.axf
